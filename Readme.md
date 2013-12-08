@@ -13,7 +13,7 @@
 
   Install with [component(1)](http://component.io):
 
-    $ component install tuxlinuxien/Kiwi
+    $ component install tuxlinuxien/kiwi
 
 ## Preview
 
