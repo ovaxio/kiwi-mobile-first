@@ -76,7 +76,7 @@
 ## Example
 
 ```html
-  <div class="kiwi-g">
+  <div class="kiwi-grid">
     <div class="kiwi-width-1-4 kiwi-width-tablet-1-2 kiwi-width-phone-1">
       <div class="grey kiwi-visible-desktop">.kiwi-width-1-4</div>
       <div class="grey kiwi-visible-tablet">.kiwi-width-tablet-1-2</div>
