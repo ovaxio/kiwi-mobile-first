@@ -1,0 +1,13 @@
+{
+  "name": "kiwi",
+  "repo": "tuxlinuxien/kiwi",
+  "description": "Responsive grid based on purecss.io",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "styles": [
+    "kiwi.css"
+  ]
+}
