@@ -11,4 +11,7 @@ clean:
 compile:
 	stylus src/kiwi.styl -o ./
 
+html:
+	jade -P -o ./ ./src/index.jade
+
 .PHONY: clean
