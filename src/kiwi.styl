@@ -3,63 +3,67 @@
 /*
 **  Globals
 */
-SPACING = 10
+GRID_SPACING = 10
 
 /*
 **  Mixins
 */
+BUILDELEM(t, e, s)
+  if e / s != 0.5 && e != s
+    .kiwi-width{t}{e}-{s}
+      width (100/ s ) * e * 1%
+      *width (((100/ s ) * e ) - 0.011) * 1%
+
+
 BUILDGRID(t)
   .kiwi-width{t}1,
   .kiwi-width{t}1-2,
+  .kiwi-width{t}2-2,
   .kiwi-width{t}1-3,
   .kiwi-width{t}2-3,
+  .kiwi-width{t}3-3,
   .kiwi-width{t}1-4,
+  .kiwi-width{t}2-4,
   .kiwi-width{t}3-4,
+  .kiwi-width{t}4-4,
   .kiwi-width{t}1-5,
   .kiwi-width{t}2-5,
   .kiwi-width{t}3-5,
   .kiwi-width{t}4-5,
   .kiwi-width{t}5-5,
   .kiwi-width{t}1-6,
+  .kiwi-width{t}2-6,
+  .kiwi-width{t}3-6,
+  .kiwi-width{t}4-6,
   .kiwi-width{t}5-6,
+  .kiwi-width{t}6-6,
   .kiwi-width{t}1-7,
   .kiwi-width{t}2-7,
   .kiwi-width{t}3-7,
   .kiwi-width{t}4-7,
   .kiwi-width{t}5-7,
   .kiwi-width{t}6-7,
+  .kiwi-width{t}7-7,
   .kiwi-width{t}1-8,
+  .kiwi-width{t}2-8,
   .kiwi-width{t}3-8,
+  .kiwi-width{t}4-8,
   .kiwi-width{t}5-8,
+  .kiwi-width{t}6-8,
   .kiwi-width{t}7-8,
+  .kiwi-width{t}8-8,
   .kiwi-width{t}1-12,
+  .kiwi-width{t}2-12,
+  .kiwi-width{t}3-12,
+  .kiwi-width{t}4-12,
   .kiwi-width{t}5-12,
+  .kiwi-width{t}6-12,
   .kiwi-width{t}7-12,
+  .kiwi-width{t}8-12,
+  .kiwi-width{t}9-12,
+  .kiwi-width{t}10-12,
   .kiwi-width{t}11-12,
-  .kiwi-width{t}1-24,
-  .kiwi-width{t}2-24,
-  .kiwi-width{t}3-24,
-  .kiwi-width{t}4-24,
-  .kiwi-width{t}5-24,
-  .kiwi-width{t}6-24,
-  .kiwi-width{t}7-24,
-  .kiwi-width{t}8-24,
-  .kiwi-width{t}9-24,
-  .kiwi-width{t}10-24,
-  .kiwi-width{t}11-24,
-  .kiwi-width{t}12-24,
-  .kiwi-width{t}13-24,
-  .kiwi-width{t}14-24,
-  .kiwi-width{t}15-24,
-  .kiwi-width{t}16-24,
-  .kiwi-width{t}17-24,
-  .kiwi-width{t}18-24,
-  .kiwi-width{t}19-24,
-  .kiwi-width{t}20-24,
-  .kiwi-width{t}21-24,
-  .kiwi-width{t}22-24,
-  .kiwi-width{t}23-24,
-  .kiwi-width{t}24-24
+  .kiwi-width{t}12-12,
     display inline-block
     box-sizing border-box
     *display inline
@@ -69,141 +73,50 @@ BUILDGRID(t)
     vertical-align top
     text-rendering auto
     float left
-    padding-left SPACING * 1px
+    padding-left GRID_SPACING * 1px
 
-  .kiwi-width{t}1-24
-    width 4.1667%
-    *width 4.1357%
 
-  .kiwi-width{t}1-12,.kiwi-width{t}2-24
-    width 8.3333%
-    *width 8.3023%
-
-  .kiwi-width{t}1-8,.kiwi-width{t}3-24
-    width 12.5000%
-    *width 12.4690%
-
-  .kiwi-width{t}1-6,.kiwi-width{t}4-24
-    width 16.6667%
-    *width 16.6357%
-
-  .kiwi-width{t}1-5
-    width 20%
-    *width 19.9690%
-
-  .kiwi-width{t}5-24
-    width 20.8333%
-    *width 20.8023%
-
-  .kiwi-width{t}1-4,.kiwi-width{t}6-24
-    width 25%
-    *width 24.9690%
-
-  .kiwi-width{t}7-24
-    width 29.1667%
-    *width 29.1357%
-
-  .kiwi-width{t}1-3,.kiwi-width{t}8-24
-    width 33.3333%
-    *width 33.3023%
-
-  .kiwi-width{t}3-8,.kiwi-width{t}9-24
-    width 37.5000%
-    *width 37.4690%
-
-  .kiwi-width{t}2-5
-    width 40%
-    *width 39.9690%
-
-  .kiwi-width{t}5-12,.kiwi-width{t}10-24
-    width 41.6667%
-    *width 41.6357%
-
-  .kiwi-width{t}11-24
-    width 45.8333%
-    *width 45.8023%
-
-  .kiwi-width{t}1-2,.kiwi-width{t}12-24
-    width 50%
-    *width 49.9690%
-
-  .kiwi-width{t}13-24
-    width 54.1667%
-    *width 54.1357%
-
-  .kiwi-width{t}7-12,.kiwi-width{t}14-24
-    width 58.3333%
-    *width 58.3023%
-
-  .kiwi-width{t}3-5
-    width 60%
-    *width 59.9690%
-
-  .kiwi-width{t}5-8,.kiwi-width{t}15-24
-    width 62.5000%
-    *width 62.4690%
-
-  .kiwi-width{t}2-3,.kiwi-width{t}16-24
-    width 66.6667%
-    *width 66.6357%
-
-  .kiwi-width{t}17-24
-    width 70.8333%
-    *width 70.8023%
-
-  .kiwi-width{t}3-4,.kiwi-width{t}18-24
-    width 75%
-    *width 74.9690%
-
-  .kiwi-width{t}19-24
-    width 79.1667%
-    *width 79.1357%
-
-  .kiwi-width{t}4-5
-    width 80%
-    *width 79.9690%
-
-  .kiwi-width{t}5-6,.kiwi-width{t}20-24
-    width 83.3333%
-    *width 83.3023%
-
-  .kiwi-width{t}7-8,.kiwi-width{t}21-24
-    width 87.5000%
-    *width 87.4690%
-
-  .kiwi-width{t}11-12,.kiwi-width{t}22-24
-    width 91.6667%
-    *width 91.6357%
-
-  .kiwi-width{t}23-24
-    width 95.8333%
-    *width 95.8023%
-
-  .kiwi-width{t}1,.kiwi-width{t}5-5,.kiwi-width{t}24-24
+  .kiwi-width{t}1,
+  .kiwi-width{t}2-2,
+  .kiwi-width{t}3-3,
+  .kiwi-width{t}4-4,
+  .kiwi-width{t}5-5,
+  .kiwi-width{t}6-6,
+  .kiwi-width{t}7-7,
+  .kiwi-width{t}8-8,
+  .kiwi-width{t}12-12
     width 100%
 
-  .kiwi-width{t}1-7
-    width (100/7) * 1%
+  .kiwi-width{t}1-2,
+  .kiwi-width{t}2-4,
+  .kiwi-width{t}3-6,
+  .kiwi-width{t}4-8,
+  .kiwi-width{t}6-12
+    width 50%
 
-  .kiwi-width{t}2-7
-    width (100/7) * 2%
-    *width (((100/7) * 2) - 0.011) * 1%
+  for i in 1..2
+    BUILDELEM(t, i, 2)
 
-  .kiwi-width{t}3-7
-    width (100/7) * 3%
-    *width (((100/7) * 3) - 0.011) * 1%
+  for i in 1..3
+    BUILDELEM(t, i, 3)
 
-  .kiwi-width{t}4-7
-    width (100/7) * 4%
-    *width (((100/7) * 4) - 0.011) * 1%
+  for i in 1..4
+    BUILDELEM(t, i, 4)
 
-  .kiwi-width{t}5-7
-    width (100/7) * 5%
-    *width (((100/7) * 5) - 0.0110) * 1%
+  for i in 1..5
+    BUILDELEM(t, i, 5)
 
-  .kiwi-width{t}6-7
-    width (100/7) * 6%
-    *width (((100/7) * 6) - 0.0110) * 1%
+  for i in 1..6
+    BUILDELEM(t, i, 6)
+
+  for i in 1..7
+    BUILDELEM(t, i, 7)
+
+  for i in 1..8
+    BUILDELEM(t, i, 8)
+
+  for i in 1..12
+    BUILDELEM(t, i, 12)
 
 .kiwi-grid
   letter-spacing: -0.31em; /* Webkit: collapse white-space between units */
@@ -215,7 +128,7 @@ BUILDGRID(t)
   -webkit-flex-flow: row wrap;
   display: -ms-flexbox;
   -ms-flex-flow: row wrap;
-  margin-left SPACING * -1px
+  margin-left GRID_SPACING * -1px
 
 .kiwi-width
   display: inline-block;
@@ -232,10 +145,13 @@ BUILDGRID(t)
 */
 BUILDGRID('-')
 
-@media (min-width: 768px) and (max-width: 979px)
+@media (min-width: 1280px)
+  BUILDGRID('-wide-')
+
+@media (max-width: 980px)
   BUILDGRID('-tablet-')
 
-@media (max-width: 767px)
+@media (max-width: 768px)
   BUILDGRID('-phone-')
 
 
@@ -250,15 +166,7 @@ BUILDGRID('-')
 .kiwi-hidden-desktop
   display: none;
 
-@media (min-width: 980px)
-  .kiwi-visible-phone
-    display: none;
-  .kiwi-visible-tablet
-    display: none;
-  .kiwi-hidden-desktop
-    display: none;
-
-@media (min-width: 768px) and (max-width: 979px)
+@media (max-width: 980px)
   .kiwi-hidden-tablet
     display: none;
   .kiwi-visible-tablet
@@ -268,7 +176,7 @@ BUILDGRID('-')
   .kiwi-visible-desktop
     display: none;
 
-@media (max-width: 767px) 
+@media (max-width: 768px) 
   .kiwi-hidden-phone
     display: none;
   .kiwi-visible-phone
