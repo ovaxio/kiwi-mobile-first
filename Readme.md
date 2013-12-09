@@ -30,86 +30,86 @@ Compatible with:
     
     .kiwi-grid
   
-  Desktop grid
+  Extra Large Screen
   
-    .kiwi-width-1
-    .kiwi-width-{1,2}-2
-    .kiwi-width-{1,2,3}-3
-    .kiwi-width-{1,2,3,4}-4
-    .kiwi-width-{1,2,3,4,5}-5
-    .kiwi-width-{1,2,3,4,5,6}-6
-    .kiwi-width-{1,2,3,4,5,6,7}-7
-    .kiwi-width-{1,2,3,4,5,6,7,8}-8
-    .kiwi-width-{1,2,3,4,5,6,7,8,9,10,11,12}-12
+    .kiwi-xlarge-1
+    .kiwi-xlarge-{1,2}-2
+    .kiwi-xlarge-{1,2,3}-3
+    .kiwi-xlarge-{1,2,3,4}-4
+    .kiwi-xlarge-{1,2,3,4,5}-5
+    .kiwi-xlarge-{1,2,3,4,5,6}-6
+    .kiwi-xlarge-{1,2,3,4,5,6,7}-7
+    .kiwi-xlarge-{1,2,3,4,5,6,7,8}-8
+    .kiwi-xlarge-{1,2,3,4,5,6,7,8,9,10,11,12}-12
 
-  Wide grid
+  Large Screen
   
-    .kiwi-width-wide-1
-    .kiwi-width-wide-{1,2}-2
-    .kiwi-width-wide-{1,2,3}-3
-    .kiwi-width-wide-{1,2,3,4}-4
-    .kiwi-width-wide-{1,2,3,4,5}-5
-    .kiwi-width-wide-{1,2,3,4,5,6}-6
-    .kiwi-width-wide-{1,2,3,4,5,6,7}-7
-    .kiwi-width-wide-{1,2,3,4,5,6,7,8}-8
-    .kiwi-width-wide-{1,2,3,4,5,6,7,8,9,10,11,12}-12
+    .kiwi-large-1
+    .kiwi-large-{1,2}-2
+    .kiwi-large-{1,2,3}-3
+    .kiwi-large-{1,2,3,4}-4
+    .kiwi-large-{1,2,3,4,5}-5
+    .kiwi-large-{1,2,3,4,5,6}-6
+    .kiwi-large-{1,2,3,4,5,6,7}-7
+    .kiwi-large-{1,2,3,4,5,6,7,8}-8
+    .kiwi-large-{1,2,3,4,5,6,7,8,9,10,11,12}-12
 
-  Tablet grid
+  Medium Screen
   
-    .kiwi-width-tablet-1
-    .kiwi-width-tablet-{1,2}-2
-    .kiwi-width-tablet-{1,2,3}-3
-    .kiwi-width-tablet-{1,2,3,4}-4
-    .kiwi-width-tablet-{1,2,3,4,5}-5
-    .kiwi-width-tablet-{1,2,3,4,5,6}-6
-    .kiwi-width-tablet-{1,2,3,4,5,6,7}-7
-    .kiwi-width-tablet-{1,2,3,4,5,6,7,8}-8
-    .kiwi-width-tablet-{1,2,3,4,5,6,7,8,9,10,11,12}-12
+    .kiwi-medium-1
+    .kiwi-medium-{1,2}-2
+    .kiwi-medium-{1,2,3}-3
+    .kiwi-medium-{1,2,3,4}-4
+    .kiwi-medium-{1,2,3,4,5}-5
+    .kiwi-medium-{1,2,3,4,5,6}-6
+    .kiwi-medium-{1,2,3,4,5,6,7}-7
+    .kiwi-medium-{1,2,3,4,5,6,7,8}-8
+    .kiwi-medium-{1,2,3,4,5,6,7,8,9,10,11,12}-12
 
-  Mobile grid
+  Small Screen
   
-    .kiwi-width-phone-1
-    .kiwi-width-phone-{1,2}-2
-    .kiwi-width-phone-{1,2,3}-3
-    .kiwi-width-phone-{1,2,3,4}-4
-    .kiwi-width-phone-{1,2,3,4,5}-5
-    .kiwi-width-phone-{1,2,3,4,5,6}-6
-    .kiwi-width-phone-{1,2,3,4,5,6,7}-7
-    .kiwi-width-phone-{1,2,3,4,5,6,7,8}-8
-    .kiwi-width-phone-{1,2,3,4,5,6,7,8,9,10,11,12}-12
+    .kiwi-small-1
+    .kiwi-small-{1,2}-2
+    .kiwi-small-{1,2,3}-3
+    .kiwi-small-{1,2,3,4}-4
+    .kiwi-small-{1,2,3,4,5}-5
+    .kiwi-small-{1,2,3,4,5,6}-6
+    .kiwi-small-{1,2,3,4,5,6,7}-7
+    .kiwi-small-{1,2,3,4,5,6,7,8}-8
+    .kiwi-small-{1,2,3,4,5,6,7,8,9,10,11,12}-12
 
   Display manager
   
-    .kiwi-visible-desktop
-    .kiwi-hidden-desktop
-    .kiwi-visible-tablet
-    .kiwi-hidden-tablet
-    .kiwi-visible-phone
-    .kiwi-hidden-phone
+    .kiwi-visible-large
+    .kiwi-hidden-large
+    .kiwi-visible-medium
+    .kiwi-hidden-medium
+    .kiwi-visible-small
+    .kiwi-hidden-small
        
 ## Example
 
 ```html
   <div class="kiwi-grid">
-    <div class="kiwi-width-1-4 kiwi-width-tablet-1-2 kiwi-width-phone-1">
-      <div class="grey kiwi-visible-desktop">.kiwi-width-1-4</div>
-      <div class="grey kiwi-visible-tablet">.kiwi-width-tablet-1-2</div>
-      <div class="grey kiwi-visible-phone">.kiwi-width-phone-1</div>
+    <div class="kiwi-large-1-4 kiwi-medium-1-2 kiwi-small-1">
+      <div class="grey kiwi-visible-large">.kiwi-large-1-4</div>
+      <div class="grey kiwi-visible-medium">.kiwi-medium-1-2</div>
+      <div class="grey kiwi-visible-small">.kiwi-small-1</div>
     </div>
-    <div class="kiwi-width-1-4 kiwi-width-tablet-1-2 kiwi-width-phone-1">
-      <div class="grey kiwi-visible-desktop">.kiwi-width-1-4</div>
-      <div class="grey kiwi-visible-tablet">.kiwi-width-tablet-1-2</div>
-      <div class="grey kiwi-visible-phone">.kiwi-width-phone-1</div>
+   <div class="kiwi-large-1-4 kiwi-medium-1-2 kiwi-small-1">
+      <div class="grey kiwi-visible-large">.kiwi-large-1-4</div>
+      <div class="grey kiwi-visible-medium">.kiwi-medium-1-2</div>
+      <div class="grey kiwi-visible-small">.kiwi-small-1</div>
     </div>
-    <div class="kiwi-width-1-4 kiwi-width-tablet-1-2 kiwi-width-phone-1">
-      <div class="grey kiwi-visible-desktop">.kiwi-width-1-4</div>
-      <div class="grey kiwi-visible-tablet">.kiwi-width-tablet-1-2</div>
-      <div class="grey kiwi-visible-phone">.kiwi-width-phone-1</div>
+    <div class="kiwi-large-1-4 kiwi-medium-1-2 kiwi-small-1">
+      <div class="grey kiwi-visible-large">.kiwi-large-1-4</div>
+      <div class="grey kiwi-visible-medium">.kiwi-medium-1-2</div>
+      <div class="grey kiwi-visible-small">.kiwi-small-1</div>
     </div>
-    <div class="kiwi-width-1-4 kiwi-width-tablet-1-2 kiwi-width-phone-1">
-      <div class="grey kiwi-visible-desktop">.kiwi-width-1-4</div>
-      <div class="grey kiwi-visible-tablet">.kiwi-width-tablet-1-2</div>
-      <div class="grey kiwi-visible-phone">.kiwi-width-phone-1</div>
+    <div class="kiwi-large-1-4 kiwi-medium-1-2 kiwi-small-1">
+      <div class="grey kiwi-visible-large">.kiwi-large-1-4</div>
+      <div class="grey kiwi-visible-medium">.kiwi-medium-1-2</div>
+      <div class="grey kiwi-visible-small">.kiwi-small-1</div>
     </div>
   </div>
 ```

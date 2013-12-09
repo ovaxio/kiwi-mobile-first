@@ -3,67 +3,80 @@
 /*
 **  Globals
 */
-GRID_SPACING = 10
+$GRID_SPACING = 10
+$XLARGE_VIEW = 1280px
+$MEDIUM_VIEW = 980px
+$SMALL_VIEW = 786px
 
 /*
 **  Mixins
 */
+media(args...)
+  output = null
+  for arg in args
+    push(output,unquote('(%s: %s)' % (arg[0] arg[1])))
+  unquote(s('%s',output))
+
+
+$MEDIA_XLARGE = media((min-width $XLARGE_VIEW))
+$MEDIA_MEDIUM = media((max-width $MEDIUM_VIEW))
+$MEDIA_SMALL = media((max-width $SMALL_VIEW))
+
 BUILDELEM(t, e, s)
   if e / s != 0.5 && e != s
-    .kiwi-width{t}{e}-{s}
+    .kiwi{t}{e}-{s}
       width (100/ s ) * e * 1%
       *width (((100/ s ) * e ) - 0.011) * 1%
 
-
 BUILDGRID(t)
-  .kiwi-width{t}1,
-  .kiwi-width{t}1-2,
-  .kiwi-width{t}2-2,
-  .kiwi-width{t}1-3,
-  .kiwi-width{t}2-3,
-  .kiwi-width{t}3-3,
-  .kiwi-width{t}1-4,
-  .kiwi-width{t}2-4,
-  .kiwi-width{t}3-4,
-  .kiwi-width{t}4-4,
-  .kiwi-width{t}1-5,
-  .kiwi-width{t}2-5,
-  .kiwi-width{t}3-5,
-  .kiwi-width{t}4-5,
-  .kiwi-width{t}5-5,
-  .kiwi-width{t}1-6,
-  .kiwi-width{t}2-6,
-  .kiwi-width{t}3-6,
-  .kiwi-width{t}4-6,
-  .kiwi-width{t}5-6,
-  .kiwi-width{t}6-6,
-  .kiwi-width{t}1-7,
-  .kiwi-width{t}2-7,
-  .kiwi-width{t}3-7,
-  .kiwi-width{t}4-7,
-  .kiwi-width{t}5-7,
-  .kiwi-width{t}6-7,
-  .kiwi-width{t}7-7,
-  .kiwi-width{t}1-8,
-  .kiwi-width{t}2-8,
-  .kiwi-width{t}3-8,
-  .kiwi-width{t}4-8,
-  .kiwi-width{t}5-8,
-  .kiwi-width{t}6-8,
-  .kiwi-width{t}7-8,
-  .kiwi-width{t}8-8,
-  .kiwi-width{t}1-12,
-  .kiwi-width{t}2-12,
-  .kiwi-width{t}3-12,
-  .kiwi-width{t}4-12,
-  .kiwi-width{t}5-12,
-  .kiwi-width{t}6-12,
-  .kiwi-width{t}7-12,
-  .kiwi-width{t}8-12,
-  .kiwi-width{t}9-12,
-  .kiwi-width{t}10-12,
-  .kiwi-width{t}11-12,
-  .kiwi-width{t}12-12,
+  .kiwi{t}1,
+  .kiwi{t}1-2,
+  .kiwi{t}2-2,
+  .kiwi{t}1-3,
+  .kiwi{t}2-3,
+  .kiwi{t}3-3,
+  .kiwi{t}1-4,
+  .kiwi{t}2-4,
+  .kiwi{t}3-4,
+  .kiwi{t}4-4,
+  .kiwi{t}1-5,
+  .kiwi{t}2-5,
+  .kiwi{t}3-5,
+  .kiwi{t}4-5,
+  .kiwi{t}5-5,
+  .kiwi{t}1-6,
+  .kiwi{t}2-6,
+  .kiwi{t}3-6,
+  .kiwi{t}4-6,
+  .kiwi{t}5-6,
+  .kiwi{t}6-6,
+  .kiwi{t}1-7,
+  .kiwi{t}2-7,
+  .kiwi{t}3-7,
+  .kiwi{t}4-7,
+  .kiwi{t}5-7,
+  .kiwi{t}6-7,
+  .kiwi{t}7-7,
+  .kiwi{t}1-8,
+  .kiwi{t}2-8,
+  .kiwi{t}3-8,
+  .kiwi{t}4-8,
+  .kiwi{t}5-8,
+  .kiwi{t}6-8,
+  .kiwi{t}7-8,
+  .kiwi{t}8-8,
+  .kiwi{t}1-12,
+  .kiwi{t}2-12,
+  .kiwi{t}3-12,
+  .kiwi{t}4-12,
+  .kiwi{t}5-12,
+  .kiwi{t}6-12,
+  .kiwi{t}7-12,
+  .kiwi{t}8-12,
+  .kiwi{t}9-12,
+  .kiwi{t}10-12,
+  .kiwi{t}11-12,
+  .kiwi{t}12-12
     display inline-block
     box-sizing border-box
     *display inline
@@ -71,27 +84,25 @@ BUILDGRID(t)
     letter-spacing normal
     word-spacing normal
     vertical-align top
-    text-rendering auto
-    float left
-    padding-left GRID_SPACING * 1px
+    padding-left $GRID_SPACING * 1px
 
 
-  .kiwi-width{t}1,
-  .kiwi-width{t}2-2,
-  .kiwi-width{t}3-3,
-  .kiwi-width{t}4-4,
-  .kiwi-width{t}5-5,
-  .kiwi-width{t}6-6,
-  .kiwi-width{t}7-7,
-  .kiwi-width{t}8-8,
-  .kiwi-width{t}12-12
+  .kiwi{t}1,
+  .kiwi{t}2-2,
+  .kiwi{t}3-3,
+  .kiwi{t}4-4,
+  .kiwi{t}5-5,
+  .kiwi{t}6-6,
+  .kiwi{t}7-7,
+  .kiwi{t}8-8,
+  .kiwi{t}12-12
     width 100%
 
-  .kiwi-width{t}1-2,
-  .kiwi-width{t}2-4,
-  .kiwi-width{t}3-6,
-  .kiwi-width{t}4-8,
-  .kiwi-width{t}6-12
+  .kiwi{t}1-2,
+  .kiwi{t}2-4,
+  .kiwi{t}3-6,
+  .kiwi{t}4-8,
+  .kiwi{t}6-12
     width 50%
 
   for i in 1..2
@@ -119,69 +130,58 @@ BUILDGRID(t)
     BUILDELEM(t, i, 12)
 
 .kiwi-grid
-  letter-spacing: -0.31em; /* Webkit: collapse white-space between units */
-  *letter-spacing: normal; /* reset IE < 8 */
-  *word-spacing: -0.43em; /* IE < 8: collapse white-space between units */
-  text-rendering: optimizespeed; /* Webkit: fixes text-rendering: optimizeLegibility */
-  font-family Helvetica, Arial, sans-serif;
+  letter-spacing: -0.31em;
+  *letter-spacing: normal;
+  *word-spacing: -0.43em;
+  text-rendering: optimizespeed;
   display: -webkit-flex;
   -webkit-flex-flow: row wrap;
   display: -ms-flexbox;
   -ms-flex-flow: row wrap;
-  margin-left GRID_SPACING * -1px
-
-.kiwi-width
-  display: inline-block;
-  *display: inline; /* IE < 8: fake inline-block */
-  zoom: 1;
-  letter-spacing: normal;
-  word-spacing: normal;
-  vertical-align: top;
-  text-rendering: auto;
-
+  margin-left $GRID_SPACING * -1px
 
 /*
 **  Responsive grids
 */
-BUILDGRID('-')
+BUILDGRID('-large-')
 
-@media (min-width: 1280px)
-  BUILDGRID('-wide-')
+@media $MEDIA_XLARGE
+  BUILDGRID('-xlarge-')
 
-@media (max-width: 980px)
-  BUILDGRID('-tablet-')
+@media $MEDIA_MEDIUM
+  BUILDGRID('-medium-')
 
-@media (max-width: 768px)
-  BUILDGRID('-phone-')
+@media $MEDIA_SMALL
+  BUILDGRID('-small-')
 
 
 /*
 **  Display
 */
 
-.kiwi-visible-phone
+.kiwi-visible-small
   display: none;
-.kiwi-visible-tablet
+.kiwi-visible-medium
   display: none;
-.kiwi-hidden-desktop
+.kiwi-hidden-large
   display: none;
 
-@media (max-width: 980px)
-  .kiwi-hidden-tablet
+@media $MEDIA_MEDIUM
+  .kiwi-hidden-medium
     display: none;
-  .kiwi-visible-tablet
+  .kiwi-visible-medium
     display: block;
-  .kiwi-visible-phone
+  .kiwi-visible-small
     display none
-  .kiwi-visible-desktop
+  .kiwi-visible-large
     display: none;
 
-@media (max-width: 768px) 
-  .kiwi-hidden-phone
+@media $MEDIA_SMALL
+  .kiwi-hidden-small
     display: none;
-  .kiwi-visible-phone
+  .kiwi-visible-small
     display: block;
-  .kiwi-visible-desktop
+  .kiwi-visible-large
     display: none;
-  .kiwi-visible-tablet
+  .kiwi-visible-medium
     display: none;
