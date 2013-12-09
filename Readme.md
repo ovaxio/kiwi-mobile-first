@@ -5,7 +5,7 @@
   Break points:
 
 * wide screen >= 1280px
-* desktop screen <= 1280px
+* desktop screen < 1280px
 * tablet screen <= 980px
 * mobile screen <= 768px
 
