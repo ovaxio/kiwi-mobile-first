@@ -2,6 +2,13 @@
 
   Responsive grids based on purecss.io
 
+  Break points:
+
+  * wide screen >= 1280px
+  * desktop screen <= 1280px
+  * tablet screen <= 980px
+  * mobile screen <= 768px
+
 
   Compatible with:
 
@@ -28,41 +35,50 @@
   Desktop grid
   
     .kiwi-width-1
-    .kiwi-width-1-2
-    .kiwi-width-{1,2}-3
-    .kiwi-width-{1,4}-4
+    .kiwi-width-{1,2}-2
+    .kiwi-width-{1,2,3}-3
+    .kiwi-width-{1,2,3,4}-4
     .kiwi-width-{1,2,3,4,5}-5
-    .kiwi-width-{1,5}-6
-    .kiwi-width-{1,2,3,4,5,6}-7
-    .kiwi-width-{1,3,5,7}-8,
-    .kiwi-width-{1,5,7,11}-12,
-    .kiwi-width-{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24}-24
+    .kiwi-width-{1,2,3,4,5,6}-6
+    .kiwi-width-{1,2,3,4,5,6,7}-7
+    .kiwi-width-{1,2,3,4,5,6,7,8}-8
+    .kiwi-width-{1,2,3,4,5,6,7,8,9,10,11,12}-12
+
+  Wide grid
+  
+    .kiwi-width-wide-1
+    .kiwi-width-wide-{1,2}-2
+    .kiwi-width-wide-{1,2,3}-3
+    .kiwi-width-wide-{1,2,3,4}-4
+    .kiwi-width-wide-{1,2,3,4,5}-5
+    .kiwi-width-wide-{1,2,3,4,5,6}-6
+    .kiwi-width-wide-{1,2,3,4,5,6,7}-7
+    .kiwi-width-wide-{1,2,3,4,5,6,7,8}-8
+    .kiwi-width-wide-{1,2,3,4,5,6,7,8,9,10,11,12}-12
 
   Tablet grid
   
     .kiwi-width-tablet-1
-    .kiwi-width-tablet-1-2
-    .kiwi-width-tablet-{1,2}-3
-    .kiwi-width-tablet-{1,4}-4
+    .kiwi-width-tablet-{1,2}-2
+    .kiwi-width-tablet-{1,2,3}-3
+    .kiwi-width-tablet-{1,2,3,4}-4
     .kiwi-width-tablet-{1,2,3,4,5}-5
-    .kiwi-width-tablet-{1,5}-6
-    .kiwi-width-tablet-{1,2,3,4,5,6}-7
-    .kiwi-width-tablet-{1,3,5,7}-8,
-    .kiwi-width-tablet-{1,5,7,11}-12,
-    .kiwi-width-tablet-{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24}-24
+    .kiwi-width-tablet-{1,2,3,4,5,6}-6
+    .kiwi-width-tablet-{1,2,3,4,5,6,7}-7
+    .kiwi-width-tablet-{1,2,3,4,5,6,7,8}-8
+    .kiwi-width-tablet-{1,2,3,4,5,6,7,8,9,10,11,12}-12
 
   Mobile grid
   
     .kiwi-width-phone-1
-    .kiwi-width-phone-1-2
-    .kiwi-width-phone-{1,2}-3
-    .kiwi-width-phone-{1,4}-4
+    .kiwi-width-phone-{1,2}-2
+    .kiwi-width-phone-{1,2,3}-3
+    .kiwi-width-phone-{1,2,3,4}-4
     .kiwi-width-phone-{1,2,3,4,5}-5
-    .kiwi-width-phone-{1,5}-6
-    .kiwi-width-phone-{1,2,3,4,5,6}-7
-    .kiwi-width-phone-{1,3,5,7}-8,
-    .kiwi-width-phone-{1,5,7,11}-12,
-    .kiwi-width-phone-{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24}-24
+    .kiwi-width-phone-{1,2,3,4,5,6}-6
+    .kiwi-width-phone-{1,2,3,4,5,6,7}-7
+    .kiwi-width-phone-{1,2,3,4,5,6,7,8}-8
+    .kiwi-width-phone-{1,2,3,4,5,6,7,8,9,10,11,12}-12
 
   Display manager
   
