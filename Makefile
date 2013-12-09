@@ -9,7 +9,8 @@ clean:
 	rm -fr build components template.js
 
 compile:
-	stylus src/kiwi.styl -o ./
+	stylus -I src/ < src/kiwi.styl > kiwi.css
+	stylus -c -I src/ < src/kiwi.styl > kiwi.min.css
 
 html:
 	jade -P -o ./ ./src/index.jade
