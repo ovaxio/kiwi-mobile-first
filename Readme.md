@@ -4,17 +4,16 @@
 
   Break points:
 
-  * wide screen >= 1280px
-  * desktop screen <= 1280px
-  * tablet screen <= 980px
-  * mobile screen <= 768px
-
+* wide screen >= 1280px
+* desktop screen <= 1280px
+* tablet screen <= 980px
+* mobile screen <= 768px
 
   Compatible with:
 
-  * Chrome
-  * Firefox
-  * IE8+
+* Chrome
+* Firefox
+* IE8+
 
 ## Installation
 
