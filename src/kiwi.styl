@@ -1,16 +1,14 @@
+/*
+**  http://tuxlinuxien.github.io/kiwi/
+**  Yoann Cerda
+*/
 @import 'nib'
 
-/*
-**  Globals
-*/
 $XLARGE_VIEW = 1900px
 $MEDIUM_VIEW = 980px
 $SMALL_VIEW = 786px
 $correction = 0.011
 
-/*
-**  Mixins
-*/
 media(args...)
   output = null
   for arg in args
@@ -154,10 +152,6 @@ BUILDGRID(t)
     display block
     margin 0 auto
 
-  .end
-    position absolute
-    right 0
-
 /*
 **  Responsive grids
 */
@@ -176,7 +170,6 @@ BUILDGRID('-large-')
 /*
 **  Display
 */
-
 .kiwi-visible-xlarge
   display none
 .kiwi-hidden-large

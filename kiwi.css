@@ -1,12 +1,11 @@
 /*
-**  Globals
-*/
-/*
-**  Mixins
+**  http://tuxlinuxien.github.io/kiwi/
+**  Yoann Cerda
 */
 .kiwi-grid {
   display: block;
   font-size: 0;
+  position: relative;
 }
 .kiwi-grid .centered {
   display: block;
