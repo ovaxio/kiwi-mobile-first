@@ -26,9 +26,6 @@ BUILDELEM(t, e, s)
     .kiwi{t}{e}-{s}
       width (100/ s ) * e * 1%
       *width (((100/ s ) * e) - $correction) * 1%
-  .kiwi{t}{e}-{s}
-    &.centered
-      margin-left ((100/ s) * ((s - e)/2) ) * 1% 
 
 BUILDGRID(t)
   .kiwi{t}1,
@@ -150,10 +147,11 @@ BUILDGRID(t)
 
 .kiwi-grid
   display block
-  letter-spacing: -0.31em;
-  *letter-spacing: normal;
-  *word-spacing: -0.43em;
   font-size: 0
+
+  .centered
+    display block
+    margin 0 auto
 
 /*
 **  Responsive grids
