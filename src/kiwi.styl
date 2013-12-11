@@ -3,7 +3,6 @@
 /*
 **  Globals
 */
-$GRID_SPACING = 10
 $XLARGE_VIEW = 1280px
 $MEDIUM_VIEW = 980px
 $SMALL_VIEW = 786px
@@ -84,10 +83,6 @@ BUILDGRID(t)
     letter-spacing normal
     word-spacing normal
     vertical-align top
-    padding-left $GRID_SPACING * 1px
-    float left
-    content ""
-
 
   .kiwi{t}1,
   .kiwi{t}2-2,
@@ -132,6 +127,7 @@ BUILDGRID(t)
     BUILDELEM(t, i, 12)
 
 .kiwi-grid
+  display block
   letter-spacing: -0.31em;
   *letter-spacing: normal;
   *word-spacing: -0.43em;
@@ -140,7 +136,6 @@ BUILDGRID(t)
   -webkit-flex-flow: row wrap;
   display: -ms-flexbox;
   -ms-flex-flow: row wrap;
-  margin-left $GRID_SPACING * -1px
 
 /*
 **  Responsive grids
@@ -177,7 +172,7 @@ BUILDGRID('-large-')
     display none
   .kiwi-visible-xlarge
     display block
-  .kiwi-hidden-large
+  .kiwi-visible-large
     display none
   .kiwi-visible-medium
     display none

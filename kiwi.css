@@ -5,6 +5,7 @@
 **  Mixins
 */
 .kiwi-grid {
+  display: block;
   letter-spacing: -0.31em;
   *letter-spacing: normal;
   *word-spacing: -0.43em;
@@ -13,7 +14,6 @@
   -webkit-flex-flow: row wrap;
   display: -ms-flexbox;
   -ms-flex-flow: row wrap;
-  margin-left: -10px;
 }
 /*
 **  Responsive grids
@@ -75,9 +75,6 @@
   letter-spacing: normal;
   word-spacing: normal;
   vertical-align: top;
-  padding-left: 10px;
-  float: left;
-  content: "";
 }
 .kiwi-large-1,
 .kiwi-large-2-2,
@@ -291,9 +288,6 @@
     letter-spacing: normal;
     word-spacing: normal;
     vertical-align: top;
-    padding-left: 10px;
-    float: left;
-    content: "";
   }
   .kiwi-xlarge-1,
   .kiwi-xlarge-2-2,
@@ -508,9 +502,6 @@
     letter-spacing: normal;
     word-spacing: normal;
     vertical-align: top;
-    padding-left: 10px;
-    float: left;
-    content: "";
   }
   .kiwi-medium-1,
   .kiwi-medium-2-2,
@@ -725,9 +716,6 @@
     letter-spacing: normal;
     word-spacing: normal;
     vertical-align: top;
-    padding-left: 10px;
-    float: left;
-    content: "";
   }
   .kiwi-small-1,
   .kiwi-small-2-2,
@@ -909,7 +897,7 @@
   .kiwi-visible-xlarge {
     display: block;
   }
-  .kiwi-hidden-large {
+  .kiwi-visible-large {
     display: none;
   }
   .kiwi-visible-medium {
