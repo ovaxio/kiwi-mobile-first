@@ -3,7 +3,7 @@
 /*
 **  Globals
 */
-$XLARGE_VIEW = 1280px
+$XLARGE_VIEW = 1440px
 $MEDIUM_VIEW = 980px
 $SMALL_VIEW = 786px
 $correction = 0.011
@@ -78,13 +78,27 @@ BUILDGRID(t)
   .kiwi{t}9-12,
   .kiwi{t}10-12,
   .kiwi{t}11-12,
-  .kiwi{t}12-12
+  .kiwi{t}12-12,
+  .kiwi{t}1-16,
+  .kiwi{t}2-16,
+  .kiwi{t}3-16,
+  .kiwi{t}4-16,
+  .kiwi{t}5-16,
+  .kiwi{t}6-16,
+  .kiwi{t}7-16,
+  .kiwi{t}8-16,
+  .kiwi{t}9-16,
+  .kiwi{t}10-16,
+  .kiwi{t}11-16,
+  .kiwi{t}12-16,
+  .kiwi{t}13-16,
+  .kiwi{t}14-16,
+  .kiwi{t}15-16,
+  .kiwi{t}16-16
     display inline-block
     box-sizing border-box
     *display inline
     zoom 1
-    letter-spacing normal
-    word-spacing normal
     vertical-align top
     min-height 1px
 
@@ -97,13 +111,14 @@ BUILDGRID(t)
   .kiwi{t}7-7,
   .kiwi{t}8-8,
   .kiwi{t}12-12
+  .kiwi{t}16-16
     width 100%
 
   .kiwi{t}1-2,
   .kiwi{t}2-4,
   .kiwi{t}3-6,
   .kiwi{t}4-8,
-  .kiwi{t}6-12
+  .kiwi{t}8-16
     width 50%
 
   for i in 1..2
@@ -130,9 +145,11 @@ BUILDGRID(t)
   for i in 1..12
     BUILDELEM(t, i, 12)
 
+  for i in 1..16
+    BUILDELEM(t, i, 16)
+
 .kiwi-grid
   display block
-  width 100%
   letter-spacing: -0.31em;
   *letter-spacing: normal;
   *word-spacing: -0.43em;
