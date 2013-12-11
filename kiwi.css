@@ -77,6 +77,7 @@
   vertical-align: top;
   padding-left: 10px;
   float: left;
+  content: "";
 }
 .kiwi-large-1,
 .kiwi-large-2-2,
@@ -292,6 +293,7 @@
     vertical-align: top;
     padding-left: 10px;
     float: left;
+    content: "";
   }
   .kiwi-xlarge-1,
   .kiwi-xlarge-2-2,
@@ -508,6 +510,7 @@
     vertical-align: top;
     padding-left: 10px;
     float: left;
+    content: "";
   }
   .kiwi-medium-1,
   .kiwi-medium-2-2,
@@ -724,6 +727,7 @@
     vertical-align: top;
     padding-left: 10px;
     float: left;
+    content: "";
   }
   .kiwi-small-1,
   .kiwi-small-2-2,
