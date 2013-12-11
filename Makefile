@@ -13,6 +13,6 @@ compile:
 	stylus -c -I src/ < src/kiwi.styl > kiwi.min.css
 
 html:
-	jade -P -o ./ ./src/index.jade
+	jade -P -o ./demo/ ./src/index.jade
 
 .PHONY: clean

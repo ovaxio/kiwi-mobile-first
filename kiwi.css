@@ -487,7 +487,7 @@
 .kiwi-large-16-16.centered {
   margin-left: 0%;
 }
-@media  (min-width: 1440px) {
+@media  (min-width: 1441px) {
   .kiwi-xlarge-1,
   .kiwi-xlarge-1-2,
   .kiwi-xlarge-2-2,
@@ -1930,7 +1930,7 @@
 .kiwi-visible-medium {
   display: none;
 }
-@media  (min-width: 1440px) {
+@media  (min-width: 1441px) {
   .kiwi-hidden-xlarge {
     display: none;
   }

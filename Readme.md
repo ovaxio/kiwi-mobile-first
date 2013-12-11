@@ -3,8 +3,8 @@
   Responsive grids based on purecss.io
 
 Break points:
-* wide screen >= 1280px
-* desktop screen < 1280px
+* wide screen >= 1441px
+* desktop screen < 1441px
 * tablet screen <= 980px
 * mobile screen <= 768px
 
@@ -22,13 +22,17 @@ Compatible with:
 
 ## Preview
 
-  [http://tuxlinuxien.github.io/kiwi/](http://tuxlinuxien.github.io/kiwi/)
+  [http://tuxlinuxien.github.io/kiwi/demo/](http://tuxlinuxien.github.io/kiwi/demo/)
 
 ## API
   
   Grid container
     
     .kiwi-grid
+
+  Column property
+
+    .centered
   
   Extra Large Screen
   
@@ -41,6 +45,7 @@ Compatible with:
     .kiwi-xlarge-{1,2,3,4,5,6,7}-7
     .kiwi-xlarge-{1,2,3,4,5,6,7,8}-8
     .kiwi-xlarge-{1,2,3,4,5,6,7,8,9,10,11,12}-12
+    .kiwi-xlarge-{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}-16
 
   Large Screen
   
@@ -53,6 +58,7 @@ Compatible with:
     .kiwi-large-{1,2,3,4,5,6,7}-7
     .kiwi-large-{1,2,3,4,5,6,7,8}-8
     .kiwi-large-{1,2,3,4,5,6,7,8,9,10,11,12}-12
+    .kiwi-large-{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}-16
 
   Medium Screen
   
@@ -65,6 +71,7 @@ Compatible with:
     .kiwi-medium-{1,2,3,4,5,6,7}-7
     .kiwi-medium-{1,2,3,4,5,6,7,8}-8
     .kiwi-medium-{1,2,3,4,5,6,7,8,9,10,11,12}-12
+    .kiwi-medium-{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}-16
 
   Small Screen
   
@@ -77,9 +84,12 @@ Compatible with:
     .kiwi-small-{1,2,3,4,5,6,7}-7
     .kiwi-small-{1,2,3,4,5,6,7,8}-8
     .kiwi-small-{1,2,3,4,5,6,7,8,9,10,11,12}-12
+    .kiwi-small-{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}-16
 
   Display manager
   
+    .kiwi-visible-xlarge
+    .kiwi-hidden-xlarge
     .kiwi-visible-large
     .kiwi-hidden-large
     .kiwi-visible-medium
