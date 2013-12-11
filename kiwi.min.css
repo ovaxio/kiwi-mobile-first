@@ -147,15 +147,24 @@
 .kiwi-small-9-12{width:75%;*width:74.989%}
 .kiwi-small-10-12{width:83.33333333333334%;*width:83.32233333333335%}
 .kiwi-small-11-12{width:91.66666666666667%;*width:91.65566666666668%}
-}.kiwi-visible-small{display:none}
-.kiwi-visible-medium{display:none}
+}.kiwi-visible-xlarge{display:none}
 .kiwi-hidden-large{display:none}
-@media  (max-width: 980px){.kiwi-hidden-medium{display:none}
+.kiwi-visible-large{display:block}
+.kiwi-visible-small{display:none}
+.kiwi-visible-medium{display:none}
+@media  (min-width: 1280px){.kiwi-hidden-xlarge{display:none}
+.kiwi-visible-xlarge{display:block}
+.kiwi-hidden-large{display:none}
+.kiwi-visible-medium{display:none}
+.kiwi-visible-small{display:none}
+}@media  (max-width: 980px){.kiwi-hidden-medium{display:none}
 .kiwi-visible-medium{display:block}
 .kiwi-visible-small{display:none}
 .kiwi-visible-large{display:none}
+.kiwi-visible-xlarge{display:none}
 }@media  (max-width: 786px){.kiwi-hidden-small{display:none}
 .kiwi-visible-small{display:block}
 .kiwi-visible-large{display:none}
 .kiwi-visible-medium{display:none}
+.kiwi-visible-xlarge{display:none}
 }

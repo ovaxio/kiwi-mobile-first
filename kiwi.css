@@ -883,14 +883,37 @@
 /*
 **  Display
 */
+.kiwi-visible-xlarge {
+  display: none;
+}
+.kiwi-hidden-large {
+  display: none;
+}
+.kiwi-visible-large {
+  display: block;
+}
 .kiwi-visible-small {
   display: none;
 }
 .kiwi-visible-medium {
   display: none;
 }
-.kiwi-hidden-large {
-  display: none;
+@media  (min-width: 1280px) {
+  .kiwi-hidden-xlarge {
+    display: none;
+  }
+  .kiwi-visible-xlarge {
+    display: block;
+  }
+  .kiwi-hidden-large {
+    display: none;
+  }
+  .kiwi-visible-medium {
+    display: none;
+  }
+  .kiwi-visible-small {
+    display: none;
+  }
 }
 @media  (max-width: 980px) {
   .kiwi-hidden-medium {
@@ -905,6 +928,9 @@
   .kiwi-visible-large {
     display: none;
   }
+  .kiwi-visible-xlarge {
+    display: none;
+  }
 }
 @media  (max-width: 786px) {
   .kiwi-hidden-small {
@@ -917,6 +943,9 @@
     display: none;
   }
   .kiwi-visible-medium {
+    display: none;
+  }
+  .kiwi-visible-xlarge {
     display: none;
   }
 }
