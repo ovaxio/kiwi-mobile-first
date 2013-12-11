@@ -1,6 +1,6 @@
 # Kiwi
 
-  Responsive grids based on purecss.io
+  Responsive grids.
 
 Break points:
 * wide screen >= 1441px
