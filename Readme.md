@@ -3,8 +3,8 @@
   2.2ko (minified + gziped) responsive grids.
 
 Break points:
-* wide screen >= 1441px
-* desktop screen < 1441px
+* wide screen >= 1900px
+* desktop screen < 1899px
 * tablet screen <= 980px
 * mobile screen <= 768px
 

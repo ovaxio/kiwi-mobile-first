@@ -299,7 +299,7 @@
   width: 93.75%;
   *width: 93.739%;
 }
-@media  (min-width: 1441px) {
+@media  (min-width: 1900px) {
   .kiwi-xlarge-1,
   .kiwi-xlarge-1-2,
   .kiwi-xlarge-2-2,
@@ -1175,7 +1175,7 @@
 .kiwi-visible-medium {
   display: none;
 }
-@media  (min-width: 1441px) {
+@media  (min-width: 1900px) {
   .kiwi-hidden-xlarge {
     display: none;
   }
