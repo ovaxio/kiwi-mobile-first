@@ -1,6 +1,6 @@
 # Kiwi
 
-  Responsive grids.
+  2.2ko (minified + gziped) responsive grids.
 
 Break points:
 * wide screen >= 1441px
