@@ -99,27 +99,61 @@ Compatible with:
        
 ## Example
 
+Responsive grid:
+
 ```html
   <div class="kiwi-grid">
     <div class="kiwi-large-1-4 kiwi-medium-1-2 kiwi-small-1">
-      <div class="grey kiwi-visible-large">.kiwi-large-1-4</div>
-      <div class="grey kiwi-visible-medium">.kiwi-medium-1-2</div>
-      <div class="grey kiwi-visible-small">.kiwi-small-1</div>
+      <div class="kiwi-visible-large">.kiwi-large-1-4</div>
+      <div class="kiwi-visible-medium">.kiwi-medium-1-2</div>
+      <div class="kiwi-visible-small">.kiwi-small-1</div>
     </div>
    <div class="kiwi-large-1-4 kiwi-medium-1-2 kiwi-small-1">
-      <div class="grey kiwi-visible-large">.kiwi-large-1-4</div>
-      <div class="grey kiwi-visible-medium">.kiwi-medium-1-2</div>
-      <div class="grey kiwi-visible-small">.kiwi-small-1</div>
+      <div class="kiwi-visible-large">.kiwi-large-1-4</div>
+      <div class="kiwi-visible-medium">.kiwi-medium-1-2</div>
+      <div class="kiwi-visible-small">.kiwi-small-1</div>
     </div>
     <div class="kiwi-large-1-4 kiwi-medium-1-2 kiwi-small-1">
-      <div class="grey kiwi-visible-large">.kiwi-large-1-4</div>
-      <div class="grey kiwi-visible-medium">.kiwi-medium-1-2</div>
-      <div class="grey kiwi-visible-small">.kiwi-small-1</div>
+      <div class="kiwi-visible-large">.kiwi-large-1-4</div>
+      <div class="kiwi-visible-medium">.kiwi-medium-1-2</div>
+      <div class="kiwi-visible-small">.kiwi-small-1</div>
     </div>
     <div class="kiwi-large-1-4 kiwi-medium-1-2 kiwi-small-1">
-      <div class="grey kiwi-visible-large">.kiwi-large-1-4</div>
-      <div class="grey kiwi-visible-medium">.kiwi-medium-1-2</div>
-      <div class="grey kiwi-visible-small">.kiwi-small-1</div>
+      <div class="kiwi-visible-large">.kiwi-large-1-4</div>
+      <div class="kiwi-visible-medium">.kiwi-medium-1-2</div>
+      <div class="kiwi-visible-small">.kiwi-small-1</div>
+    </div>
+  </div>
+```
+
+
+Nested grid:
+
+```html
+  <div class="kiwi-grid">
+    <div class="kiwi-large-2-5">
+      <div>.kiwi-large-3-5</div>
+    </div>
+    <div class="kiwi-large-3-5">
+      <div class="kiwi-grid">
+        <div class="kiwi-large-1-2">
+          <div>.kiwi-large-1-2</div>
+        </div>
+        <div class="kiwi-large-1-2">
+          <div>.kiwi-large-1-2</div>
+        </div>
+      </div>
+    </div>
+  </div>
+```
+
+
+Centered:
+
+```html
+  <div class="kiwi-grid">
+    <div class="kiwi-large-2-5.centered">
+      <div>.kiwi-large-2-5.centered</div>
     </div>
   </div>
 ```
