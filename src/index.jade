@@ -16,6 +16,7 @@ html
         background-color grey
         color white
         margin-bottom 5px
+        font-size 20px
   body
     h1 Grids css component
     br
@@ -29,43 +30,46 @@ html
     h2 [TEST] Reponsive grid 
     .kiwi-grid
       .kiwi-large-1-4.kiwi-medium-1-2.kiwi-small-1
+        .grey.kiwi-visible-xlarge .kiwi-xlarge-1-4
         .grey.kiwi-visible-large .kiwi-large-1-4
         .grey.kiwi-visible-medium .kiwi-medium-1-2
         .grey.kiwi-visible-small .kiwi-small-1
       .kiwi-large-1-4.kiwi-medium-1-2.kiwi-small-1
+        .grey.kiwi-visible-xlarge .kiwi-xlarge-1-4
         .grey.kiwi-visible-large .kiwi-large-1-4
         .grey.kiwi-visible-medium .kiwi-medium-1-2
         .grey.kiwi-visible-small .kiwi-small-1
       .kiwi-large-1-4.kiwi-medium-1-2.kiwi-small-1
+        .grey.kiwi-visible-xlarge .kiwi-xlarge-1-4
         .grey.kiwi-visible-large .kiwi-large-1-4
         .grey.kiwi-visible-medium .kiwi-medium-1-2
         .grey.kiwi-visible-small .kiwi-small-1
       .kiwi-large-1-4.kiwi-medium-1-2.kiwi-small-1
+        .grey.kiwi-visible-xlarge .kiwi-xlarge-1-4
         .grey.kiwi-visible-large .kiwi-large-1-4
         .grey.kiwi-visible-medium .kiwi-medium-1-2
         .grey.kiwi-visible-small .kiwi-small-1
       
       
+      
     br
     br
-    h2 [TEST] Simple grid
+    h2 [TEST] Nested grid
     .kiwi-grid
-      .kiwi-large-3-5
-        .grey .kiwi-large-3-5
       .kiwi-large-2-5
-        .grey .kiwi-large-2-5
-      .kiwi-large-3-7
-        .grey .kiwi-large-3-7
-      .kiwi-large-4-7
-        .grey .kiwi-large-4-7
+        .grey .kiwi-large-3-5
+      .kiwi-large-3-5
+        .kiwi-grid
+          .kiwi-large-1-2.centered
+            .grey .kiwi-large-2-5.centered
+      
 
     br
     br
-    h2 [TEST] Push
+    h2 [TEST] Centered
     .kiwi-grid
-      .kiwi-large-1-5
-      .kiwi-large-3-5
-        .grey .kiwi-large-3-5
+      .kiwi-large-3-5.centered
+        .grey .kiwi-large-3-5.centered
       
         
         

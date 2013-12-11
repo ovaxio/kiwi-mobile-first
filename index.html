@@ -14,6 +14,7 @@
   background-color: #808080;
   color: #fff;
   margin-bottom: 5px;
+  font-size: 20px;
 }
 </style>
   </head>
@@ -27,46 +28,47 @@
     <h2>[TEST] Reponsive grid </h2>
     <div class="kiwi-grid">
       <div class="kiwi-large-1-4 kiwi-medium-1-2 kiwi-small-1">
+        <div class="grey kiwi-visible-xlarge">.kiwi-xlarge-1-4</div>
         <div class="grey kiwi-visible-large">.kiwi-large-1-4</div>
         <div class="grey kiwi-visible-medium">.kiwi-medium-1-2</div>
         <div class="grey kiwi-visible-small">.kiwi-small-1</div>
       </div>
       <div class="kiwi-large-1-4 kiwi-medium-1-2 kiwi-small-1">
+        <div class="grey kiwi-visible-xlarge">.kiwi-xlarge-1-4</div>
         <div class="grey kiwi-visible-large">.kiwi-large-1-4</div>
         <div class="grey kiwi-visible-medium">.kiwi-medium-1-2</div>
         <div class="grey kiwi-visible-small">.kiwi-small-1</div>
       </div>
       <div class="kiwi-large-1-4 kiwi-medium-1-2 kiwi-small-1">
+        <div class="grey kiwi-visible-xlarge">.kiwi-xlarge-1-4</div>
         <div class="grey kiwi-visible-large">.kiwi-large-1-4</div>
         <div class="grey kiwi-visible-medium">.kiwi-medium-1-2</div>
         <div class="grey kiwi-visible-small">.kiwi-small-1</div>
       </div>
       <div class="kiwi-large-1-4 kiwi-medium-1-2 kiwi-small-1">
+        <div class="grey kiwi-visible-xlarge">.kiwi-xlarge-1-4</div>
         <div class="grey kiwi-visible-large">.kiwi-large-1-4</div>
         <div class="grey kiwi-visible-medium">.kiwi-medium-1-2</div>
         <div class="grey kiwi-visible-small">.kiwi-small-1</div>
       </div>
     </div><br><br>
-    <h2>[TEST] Simple grid</h2>
+    <h2>[TEST] Nested grid</h2>
     <div class="kiwi-grid">
-      <div class="kiwi-large-3-5">
-        <div class="grey">.kiwi-large-3-5</div>
-      </div>
       <div class="kiwi-large-2-5">
-        <div class="grey">.kiwi-large-2-5</div>
+        <div class="grey">.kiwi-large-3-5</div>
       </div>
-      <div class="kiwi-large-3-7">
-        <div class="grey">.kiwi-large-3-7</div>
-      </div>
-      <div class="kiwi-large-4-7">
-        <div class="grey">.kiwi-large-4-7</div>
+      <div class="kiwi-large-3-5">
+        <div class="kiwi-grid">
+          <div class="kiwi-large-1-2 centered">
+            <div class="grey">.kiwi-large-2-5.centered</div>
+          </div>
+        </div>
       </div>
     </div><br><br>
-    <h2>[TEST] Push</h2>
+    <h2>[TEST] Centered</h2>
     <div class="kiwi-grid">
-      <div class="kiwi-large-1-5"></div>
-      <div class="kiwi-large-3-5">
-        <div class="grey">.kiwi-large-3-5</div>
+      <div class="kiwi-large-3-5 centered">
+        <div class="grey">.kiwi-large-3-5.centered</div>
       </div>
     </div>
   </body>
