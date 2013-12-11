@@ -7,6 +7,7 @@ $GRID_SPACING = 10
 $XLARGE_VIEW = 1280px
 $MEDIUM_VIEW = 980px
 $SMALL_VIEW = 786px
+$correction = 0.011
 
 /*
 **  Mixins
@@ -17,7 +18,6 @@ media(args...)
     push(output,unquote('(%s: %s)' % (arg[0] arg[1])))
   unquote(s('%s',output))
 
-
 $MEDIA_XLARGE = media((min-width $XLARGE_VIEW))
 $MEDIA_MEDIUM = media((max-width $MEDIUM_VIEW))
 $MEDIA_SMALL = media((max-width $SMALL_VIEW))
@@ -26,7 +26,7 @@ BUILDELEM(t, e, s)
   if e / s != 0.5 && e != s
     .kiwi{t}{e}-{s}
       width (100/ s ) * e * 1%
-      *width (((100/ s ) * e ) - 0.011) * 1%
+      *width (((100/ s ) * e) - $correction) * 1%
 
 BUILDGRID(t)
   .kiwi{t}1,
@@ -160,29 +160,49 @@ BUILDGRID('-large-')
 **  Display
 */
 
-.kiwi-visible-small
-  display: none;
-.kiwi-visible-medium
-  display: none;
+.kiwi-visible-xlarge
+  display none
 .kiwi-hidden-large
-  display: none;
+  display none
+.kiwi-visible-large
+  display block
+.kiwi-visible-small
+  display none
+.kiwi-visible-medium
+  display none
+
+@media $MEDIA_XLARGE
+  .kiwi-hidden-xlarge
+    display none
+  .kiwi-visible-xlarge
+    display block
+  .kiwi-hidden-large
+    display none
+  .kiwi-visible-medium
+    display none
+  .kiwi-visible-small
+    display none
 
 @media $MEDIA_MEDIUM
   .kiwi-hidden-medium
-    display: none;
+    display none
   .kiwi-visible-medium
-    display: block;
+    display block
   .kiwi-visible-small
     display none
   .kiwi-visible-large
-    display: none;
+    display none
+  .kiwi-visible-xlarge
+    display none
 
 @media $MEDIA_SMALL
   .kiwi-hidden-small
-    display: none;
+    display: none
   .kiwi-visible-small
-    display: block;
+    display: block
   .kiwi-visible-large
-    display: none;
+    display: none
   .kiwi-visible-medium
-    display: none;
+    display: none
+  .kiwi-visible-xlarge
+    display none
