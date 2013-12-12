@@ -12,6 +12,7 @@ Break points:
 Compatible with:
 * Chrome
 * Firefox
+* Safari
 * IE8+
 
 ## Installation
@@ -20,7 +21,7 @@ Compatible with:
 
     $ component install tuxlinuxien/kiwi
 
-## Preview
+## Demo
 
   [http://tuxlinuxien.github.io/kiwi/demo/](http://tuxlinuxien.github.io/kiwi/demo/)
 
