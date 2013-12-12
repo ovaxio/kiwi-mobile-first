@@ -22,8 +22,8 @@ $MEDIA_SMALL = media((max-width $SMALL_VIEW))
 BUILDELEM(t, e, s)
   if e / s != 0.5 && e != s
     .kiwi{t}{e}-{s}
-      width (100/ s ) * e * 1%
-      *width (((100/ s ) * e) - $correction) * 1%
+      width floor( (100/ s ) * e * 1% )
+      *width floor( (((100/ s ) * e) - $correction) * 1% )
 
 BUILDGRID(t)
   .kiwi{t}1,
