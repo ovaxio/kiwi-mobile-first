@@ -1,2 +1,7 @@
 components
 build
+.DS_Store
+*.s[a-w][a-z]
+*.un~
+.Spotlight-V100
+.Trashes
