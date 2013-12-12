@@ -1,15 +1,27 @@
-# Kiwi
+# Kiwi Responsive Grid
 
-  2.2ko (minified + gziped) responsive grids.
+## Features
 
-Break points:
-* wide screen >= 1900px
-* desktop screen < 1899px
-* tablet screen <= 980px
-* mobile screen <= 768px
+* 1.4KB (minified + gziped)
+* 4 breakpoints by default (small/medium/large/xlarge)
+* IE7+ support
+* Hide/show on a given breakpoint with `.hidden-` and `.visible-` classes
+* Grid nesting support
+* Center columns
+* [Stylus](http://learnboost.github.io/stylus/) source available
+* [Component ready](https://github.com/component/component)
+
+
+**Break points:**
+
+* Wide screen `>= 1900px`
+* Desktop screen `< 1899px`
+* Tablet screen `<= 980px`
+* Mobile screen `<= 768px`
 
   
-Compatible with:
+**Compatible with:**
+
 * Chrome
 * Firefox
 * Safari
