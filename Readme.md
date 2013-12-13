@@ -49,14 +49,14 @@
   Extra Large Screen
   
     .kiwi-xlarge-1
-    .kiwi-xlarge-{1,2}-2
-    .kiwi-xlarge-{1,2,3}-3
-    .kiwi-xlarge-{1,2,3,4}-4
-    .kiwi-xlarge-{1,2,3,4,5}-5
-    .kiwi-xlarge-{1,2,3,4,5,6}-6
+    .kiwi-xlarge-1-2
+    .kiwi-xlarge-{1,2}-3
+    .kiwi-xlarge-{1,3}-4
+    .kiwi-xlarge-{1,2,3,4}-5
+    .kiwi-xlarge-{1,5}-6
     .kiwi-xlarge-{1,2,3,4,5,6,7}-7
-    .kiwi-xlarge-{1,2,3,4,5,6,7,8}-8
-    .kiwi-xlarge-{1,2,3,4,5,6,7,8,9,10,11,12}-12
+    .kiwi-xlarge-{1,3,5,7}-8
+    .kiwi-xlarge-{1,2,3,4,5,6,7,8,9,10,11}-12
     .kiwi-xlarge-{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}-16
 
   Large Screen
