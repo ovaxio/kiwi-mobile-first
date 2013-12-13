@@ -42,7 +42,7 @@
     
     .kiwi-grid
 
-  Column property
+  Column definition
 
     .kiwi-col
 
@@ -106,10 +106,13 @@
   
     .kiwi-visible-xlarge
     .kiwi-hidden-xlarge
+
     .kiwi-visible-large
     .kiwi-hidden-large
+
     .kiwi-visible-medium
     .kiwi-hidden-medium
+    
     .kiwi-visible-small
     .kiwi-hidden-small
        
