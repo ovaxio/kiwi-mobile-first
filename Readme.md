@@ -2,7 +2,7 @@
 
 ## Features
 
-* 1.4KB (minified + gziped)
+* 838B (minified + gziped)
 * 4 breakpoints by default (small/medium/large/xlarge)
 * Hide/show on a given breakpoint with `.hidden-` and `.visible-` classes
 * Grid nesting support
@@ -44,59 +44,63 @@
 
   Column property
 
+    .kiwi-col
+
+  Column property
+
     .centered
   
   Extra Large Screen
   
-    .kiwi-xlarge-1
-    .kiwi-xlarge-1-2
-    .kiwi-xlarge-{1,2}-3
-    .kiwi-xlarge-{1,3}-4
-    .kiwi-xlarge-{1,2,3,4}-5
-    .kiwi-xlarge-{1,5}-6
-    .kiwi-xlarge-{1,2,3,4,5,6,7}-7
-    .kiwi-xlarge-{1,3,5,7}-8
-    .kiwi-xlarge-{1,2,3,4,5,6,7,8,9,10,11}-12
-    .kiwi-xlarge-{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}-16
+    .xlarge-1
+    .xlarge-1-2
+    .xlarge-{1,2}-3
+    .xlarge-{1,3}-4
+    .xlarge-{1,2,3,4}-5
+    .xlarge-{1,5}-6
+    .xlarge-{1,2,3,4,5,6,7}-7
+    .xlarge-{1,3,5,7}-8
+    .xlarge-{1,5,7,11}-12
+    .xlarge-{1,3,5,7,9,11,13,15}-16
 
   Large Screen
   
-    .kiwi-large-1
-    .kiwi-large-{1,2}-2
-    .kiwi-large-{1,2,3}-3
-    .kiwi-large-{1,2,3,4}-4
-    .kiwi-large-{1,2,3,4,5}-5
-    .kiwi-large-{1,2,3,4,5,6}-6
-    .kiwi-large-{1,2,3,4,5,6,7}-7
-    .kiwi-large-{1,2,3,4,5,6,7,8}-8
-    .kiwi-large-{1,2,3,4,5,6,7,8,9,10,11,12}-12
-    .kiwi-large-{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}-16
+    .large-1
+    .large-1-2
+    .large-{1,2}-3
+    .large-{1,3}-4
+    .large-{1,2,3,4}-5
+    .large-{1,5}-6
+    .large-{1,2,3,4,5,6,7}-7
+    .large-{1,3,5,7}-8
+    .large-{1,5,7,11}-12
+    .large-{1,3,5,7,9,11,13,15}-16
 
   Medium Screen
   
-    .kiwi-medium-1
-    .kiwi-medium-{1,2}-2
-    .kiwi-medium-{1,2,3}-3
-    .kiwi-medium-{1,2,3,4}-4
-    .kiwi-medium-{1,2,3,4,5}-5
-    .kiwi-medium-{1,2,3,4,5,6}-6
-    .kiwi-medium-{1,2,3,4,5,6,7}-7
-    .kiwi-medium-{1,2,3,4,5,6,7,8}-8
-    .kiwi-medium-{1,2,3,4,5,6,7,8,9,10,11,12}-12
-    .kiwi-medium-{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}-16
+    .medium-1
+    .medium-1-2
+    .medium-{1,2}-3
+    .medium-{1,3}-4
+    .medium-{1,2,3,4}-5
+    .medium-{1,5}-6
+    .medium-{1,2,3,4,5,6,7}-7
+    .medium-{1,3,5,7}-8
+    .medium-{1,5,7,11}-12
+    .medium-{1,3,5,7,9,11,13,15}-16
 
   Small Screen
   
-    .kiwi-small-1
-    .kiwi-small-{1,2}-2
-    .kiwi-small-{1,2,3}-3
-    .kiwi-small-{1,2,3,4}-4
-    .kiwi-small-{1,2,3,4,5}-5
-    .kiwi-small-{1,2,3,4,5,6}-6
-    .kiwi-small-{1,2,3,4,5,6,7}-7
-    .kiwi-small-{1,2,3,4,5,6,7,8}-8
-    .kiwi-small-{1,2,3,4,5,6,7,8,9,10,11,12}-12
-    .kiwi-small-{1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16}-16
+    .smaill-1
+    .smaill-1-2
+    .smaill-{1,2}-3
+    .smaill-{1,3}-4
+    .smaill-{1,2,3,4}-5
+    .smaill-{1,5}-6
+    .smaill-{1,2,3,4,5,6,7}-7
+    .smaill-{1,3,5,7}-8
+    .smaill-{1,5,7,11}-12
+    .smaill-{1,3,5,7,9,11,13,15}-16
 
   Display manager
   
@@ -135,16 +139,13 @@ Nested grid:
 
 ```html
   <div class="kiwi-grid">
-    <div class="kiwi-large-2-5">
-      <div>.kiwi-large-3-5</div>
+    <div class="kiwi-col large-2-5">
+      <div class="grey">.kiwi-col.large-2-5</div>
     </div>
-    <div class="kiwi-large-3-5">
+    <div class="kiwi-col large-3-5">
       <div class="kiwi-grid">
-        <div class="kiwi-large-1-2">
-          <div>.kiwi-large-1-2</div>
-        </div>
-        <div class="kiwi-large-1-2">
-          <div>.kiwi-large-1-2</div>
+        <div class="kiwi-col large-1-2 centered">
+          <div class="grey">.kiwi-col.large-1-2.centered</div>
         </div>
       </div>
     </div>
