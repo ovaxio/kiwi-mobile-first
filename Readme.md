@@ -4,7 +4,6 @@
 
 * 1.4KB (minified + gziped)
 * 4 breakpoints by default (small/medium/large/xlarge)
-* IE7+ support
 * Hide/show on a given breakpoint with `.hidden-` and `.visible-` classes
 * Grid nesting support
 * Center columns
@@ -25,7 +24,7 @@
 * Chrome
 * Firefox
 * Safari
-* IE8+
+* IE7+
 
 ## Installation
 
