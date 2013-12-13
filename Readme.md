@@ -116,23 +116,23 @@
     .kiwi-visible-small
     .kiwi-hidden-small
        
-## Example
+## Examples
 
 Responsive grid:
 
 ```html
   <div class="kiwi-grid">
     <div class="kiwi-col large-1-4 medium-1-2 small-1">
-      <code class="grey">.kiwi-col.large-1-4.medium-1-2.small-1</code>
+      <code>.kiwi-col.large-1-4.medium-1-2.small-1</code>
     </div>
      <div class="kiwi-col large-1-4 medium-1-2 small-1">
-      <code class="grey">.kiwi-col.large-1-4.medium-1-2.small-1</code>
+      <code>.kiwi-col.large-1-4.medium-1-2.small-1</code>
     </div>
      <div class="kiwi-col large-1-4 medium-1-2 small-1">
-      <code class="grey">.kiwi-col.large-1-4.medium-1-2.small-1</code>
+      <code>.kiwi-col.large-1-4.medium-1-2.small-1</code>
     </div>
     <div class="kiwi-col large-1-4 medium-1-2 small-1">
-      <code class="grey">.kiwi-col.large-1-4.medium-1-2.small-1</code>
+      <code>.kiwi-col.large-1-4.medium-1-2.small-1</code>
     </div>
   </div>
 ```
@@ -143,12 +143,12 @@ Nested grid:
 ```html
   <div class="kiwi-grid">
     <div class="kiwi-col large-2-5">
-      <div class="grey">.kiwi-col.large-2-5</div>
+      <div>.kiwi-col.large-2-5</div>
     </div>
     <div class="kiwi-col large-3-5">
       <div class="kiwi-grid">
         <div class="kiwi-col large-1-2 centered">
-          <div class="grey">.kiwi-col.large-1-2.centered</div>
+          <div>.kiwi-col.large-1-2.centered</div>
         </div>
       </div>
     </div>
