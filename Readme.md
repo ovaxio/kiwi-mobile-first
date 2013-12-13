@@ -115,25 +115,17 @@ Responsive grid:
 
 ```html
   <div class="kiwi-grid">
-    <div class="kiwi-large-1-4 kiwi-medium-1-2 kiwi-small-1">
-      <div class="kiwi-visible-large">.kiwi-large-1-4</div>
-      <div class="kiwi-visible-medium">.kiwi-medium-1-2</div>
-      <div class="kiwi-visible-small">.kiwi-small-1</div>
+    <div class="kiwi-col large-1-4 medium-1-2 small-1">
+      <code class="grey">.kiwi-col.large-1-4.medium-1-2.small-1</code>
     </div>
-   <div class="kiwi-large-1-4 kiwi-medium-1-2 kiwi-small-1">
-      <div class="kiwi-visible-large">.kiwi-large-1-4</div>
-      <div class="kiwi-visible-medium">.kiwi-medium-1-2</div>
-      <div class="kiwi-visible-small">.kiwi-small-1</div>
+     <div class="kiwi-col large-1-4 medium-1-2 small-1">
+      <code class="grey">.kiwi-col.large-1-4.medium-1-2.small-1</code>
     </div>
-    <div class="kiwi-large-1-4 kiwi-medium-1-2 kiwi-small-1">
-      <div class="kiwi-visible-large">.kiwi-large-1-4</div>
-      <div class="kiwi-visible-medium">.kiwi-medium-1-2</div>
-      <div class="kiwi-visible-small">.kiwi-small-1</div>
+     <div class="kiwi-col large-1-4 medium-1-2 small-1">
+      <code class="grey">.kiwi-col.large-1-4.medium-1-2.small-1</code>
     </div>
-    <div class="kiwi-large-1-4 kiwi-medium-1-2 kiwi-small-1">
-      <div class="kiwi-visible-large">.kiwi-large-1-4</div>
-      <div class="kiwi-visible-medium">.kiwi-medium-1-2</div>
-      <div class="kiwi-visible-small">.kiwi-small-1</div>
+    <div class="kiwi-col large-1-4 medium-1-2 small-1">
+      <code class="grey">.kiwi-col.large-1-4.medium-1-2.small-1</code>
     </div>
   </div>
 ```
