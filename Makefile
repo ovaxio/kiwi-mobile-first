@@ -9,10 +9,11 @@ clean:
 	rm -fr build components template.js
 
 compile:
-	stylus -I src/ < src/kiwi.styl | ./round.py > kiwi.css
+	stylus -I src/ < src/kiwi.styl \
+	| python -c "import re,sys;r=lambda s:str(round(float(s.group(0)),4));print re.sub(r'\d+\.\d{4,}',r,sys.stdin.read());" > kiwi.css
 	stylus -c -I src/ < src/kiwi.styl \
       | tr -d '\n' \
-      | ./round.py \
+      | python -c "import re, sys;r=lambda s:str(round(float(s.group(0)),4));print re.sub(r'\d+\.\d{4,}',r,sys.stdin.read());" \
       | sed -e 's/}\s+/}/g' \
       | sed -e 's/media  /media/g' \
       | sed -e 's/: /:/g' \
