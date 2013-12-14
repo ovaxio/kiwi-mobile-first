@@ -19,8 +19,8 @@ compile:
       | sed -e 's/: /:/g' \
       | sed -e 's/;}/}/g' \
       > kiwi.min.css \
-      && zopfli -i1000000 kiwi.min.css
-# https://code.google.com/p/zopfli/
+      && gzip -6 kiwi.min.css
+			# https://code.google.com/p/zopfli/
 
 
 html:
