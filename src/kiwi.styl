@@ -76,64 +76,64 @@ BUILDGRID(t)
 /*
 **  Responsive grids
 */
-BUILDGRID('large')
+BUILDGRID('l')
 
 @media $MEDIA_XLARGE
-  BUILDGRID('xlarge')
+  BUILDGRID('xl')
 
 @media $MEDIA_MEDIUM
-  BUILDGRID('medium')
+  BUILDGRID('m')
 
 @media $MEDIA_SMALL
-  BUILDGRID('small')
+  BUILDGRID('s')
 
 
 /*
 **  Display
 */
-.kiwi-visible-xlarge
+.kiwi-visible-xl
   display none
-.kiwi-hidden-large
+.kiwi-hidden-l
   display none
-.kiwi-visible-large
+.kiwi-visible-l
   display block
-.kiwi-visible-small
+.kiwi-visible-s
   display none
-.kiwi-visible-medium
+.kiwi-visible-m
   display none
 
 @media $MEDIA_XLARGE
-  .kiwi-hidden-xlarge
+  .kiwi-hidden-xl
     display none
-  .kiwi-visible-xlarge
+  .kiwi-visible-xl
     display block
-  .kiwi-visible-large
+  .kiwi-visible-l
     display none
-  .kiwi-visible-medium
+  .kiwi-visible-m
     display none
-  .kiwi-visible-small
+  .kiwi-visible-s
     display none
 
 @media $MEDIA_MEDIUM
-  .kiwi-hidden-medium
+  .kiwi-hidden-m
     display none
-  .kiwi-visible-medium
+  .kiwi-visible-m
     display block
-  .kiwi-visible-small
+  .kiwi-visible-s
     display none
-  .kiwi-visible-large
+  .kiwi-visible-l
     display none
-  .kiwi-visible-xlarge
+  .kiwi-visible-xl
     display none
 
 @media $MEDIA_SMALL
-  .kiwi-hidden-small
+  .kiwi-hidden-s
     display: none
-  .kiwi-visible-small
+  .kiwi-visible-s
     display: block
-  .kiwi-visible-large
+  .kiwi-visible-l
     display: none
-  .kiwi-visible-medium
+  .kiwi-visible-m
     display: none
-  .kiwi-visible-xlarge
+  .kiwi-visible-xl
     display none

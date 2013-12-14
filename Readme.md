@@ -2,7 +2,7 @@
 
 ## Features
 
-* 904B (minified + gziped -6)
+* 714B (minified + gziped)
 * 4 breakpoints by default (small/medium/large/xlarge)
 * Hide/show on a given breakpoint with `.hidden-` and `.visible-` classes
 * Grid nesting support
@@ -52,69 +52,69 @@
   
   Extra Large Screen
   
-    .xlarge-1
-    .xlarge-1-2
-    .xlarge-{1,2}-3
-    .xlarge-{1,3}-4
-    .xlarge-{1,2,3,4}-5
-    .xlarge-{1,5}-6
-    .xlarge-{1,2,3,4,5,6,7}-7
-    .xlarge-{1,3,5,7}-8
-    .xlarge-{1,5,7,11}-12
-    .xlarge-{1,3,5,7,9,11,13,15}-16
+    .xl-1
+    .xl-1-2
+    .xl-{1,2}-3
+    .xl-{1,3}-4
+    .xl-{1,2,3,4}-5
+    .xl-{1,5}-6
+    .xl-{1,2,3,4,5,6,7}-7
+    .xl-{1,3,5,7}-8
+    .xl-{1,5,7,11}-12
+    .xl-{1,3,5,7,9,11,13,15}-16
 
   Large Screen
   
-    .large-1
-    .large-1-2
-    .large-{1,2}-3
-    .large-{1,3}-4
-    .large-{1,2,3,4}-5
-    .large-{1,5}-6
-    .large-{1,2,3,4,5,6,7}-7
-    .large-{1,3,5,7}-8
-    .large-{1,5,7,11}-12
-    .large-{1,3,5,7,9,11,13,15}-16
+    .l-1
+    .l-1-2
+    .l-{1,2}-3
+    .l-{1,3}-4
+    .l-{1,2,3,4}-5
+    .l-{1,5}-6
+    .l-{1,2,3,4,5,6,7}-7
+    .l-{1,3,5,7}-8
+    .l-{1,5,7,11}-12
+    .l-{1,3,5,7,9,11,13,15}-16
 
   Medium Screen
   
-    .medium-1
-    .medium-1-2
-    .medium-{1,2}-3
-    .medium-{1,3}-4
-    .medium-{1,2,3,4}-5
-    .medium-{1,5}-6
-    .medium-{1,2,3,4,5,6,7}-7
-    .medium-{1,3,5,7}-8
-    .medium-{1,5,7,11}-12
-    .medium-{1,3,5,7,9,11,13,15}-16
+    .m-1
+    .m-1-2
+    .m-{1,2}-3
+    .m-{1,3}-4
+    .m-{1,2,3,4}-5
+    .m-{1,5}-6
+    .m-{1,2,3,4,5,6,7}-7
+    .m-{1,3,5,7}-8
+    .m-{1,5,7,11}-12
+    .m-{1,3,5,7,9,11,13,15}-16
 
   Small Screen
   
-    .smaill-1
-    .smaill-1-2
-    .smaill-{1,2}-3
-    .smaill-{1,3}-4
-    .smaill-{1,2,3,4}-5
-    .smaill-{1,5}-6
-    .smaill-{1,2,3,4,5,6,7}-7
-    .smaill-{1,3,5,7}-8
-    .smaill-{1,5,7,11}-12
-    .smaill-{1,3,5,7,9,11,13,15}-16
+    .s-1
+    .s-1-2
+    .s-{1,2}-3
+    .s-{1,3}-4
+    .s-{1,2,3,4}-5
+    .s-{1,5}-6
+    .s-{1,2,3,4,5,6,7}-7
+    .s-{1,3,5,7}-8
+    .s-{1,5,7,11}-12
+    .s-{1,3,5,7,9,11,13,15}-16
 
   Display manager
   
-    .kiwi-visible-xlarge
-    .kiwi-hidden-xlarge
+    .kiwi-visible-xl
+    .kiwi-hidden-xl
 
-    .kiwi-visible-large
-    .kiwi-hidden-large
+    .kiwi-visible-l
+    .kiwi-hidden-l
 
-    .kiwi-visible-medium
-    .kiwi-hidden-medium
+    .kiwi-visible-m
+    .kiwi-hidden-m
     
-    .kiwi-visible-small
-    .kiwi-hidden-small
+    .kiwi-visible-s
+    .kiwi-hidden-s
        
 ## Examples
 
@@ -122,18 +122,19 @@ Responsive grid:
 
 ```html
   <div class="kiwi-grid">
-    <div class="kiwi-col large-1-4 medium-1-2 small-1">
-      <code>.kiwi-col.large-1-4.medium-1-2.small-1</code>
+    <div class="kiwi-col l-1-4 m-1-2 s-1">
+      <code>kiwi-col l-1-4 m-1-2 s-1</code>
     </div>
-     <div class="kiwi-col large-1-4 medium-1-2 small-1">
-      <code>.kiwi-col.large-1-4.medium-1-2.small-1</code>
+    <div class="kiwi-col l-1-4 m-1-2 s-1">
+      <code>kiwi-col l-1-4 m-1-2 s-1</code>
     </div>
-     <div class="kiwi-col large-1-4 medium-1-2 small-1">
-      <code>.kiwi-col.large-1-4.medium-1-2.small-1</code>
+    <div class="kiwi-col l-1-4 m-1-2 s-1">
+      <code>kiwi-col l-1-4 m-1-2 s-1</code>
     </div>
-    <div class="kiwi-col large-1-4 medium-1-2 small-1">
-      <code>.kiwi-col.large-1-4.medium-1-2.small-1</code>
+    <div class="kiwi-col l-1-4 m-1-2 s-1">
+      <code>kiwi-col l-1-4 m-1-2 s-1</code>
     </div>
+     
   </div>
 ```
 
@@ -142,13 +143,13 @@ Nested grid:
 
 ```html
   <div class="kiwi-grid">
-    <div class="kiwi-col large-2-5">
-      <div>.kiwi-col.large-2-5</div>
+    <div class="kiwi-col l-2-5">
+      <div>.kiwi-col.l-2-5</div>
     </div>
-    <div class="kiwi-col large-3-5">
+    <div class="kiwi-col l-3-5">
       <div class="kiwi-grid">
-        <div class="kiwi-col large-1-2 centered">
-          <div>.kiwi-col.large-1-2.centered</div>
+        <div class="kiwi-col l-1-2 centered">
+          <div>.kiwi-col.l-1-2.centered</div>
         </div>
       </div>
     </div>
