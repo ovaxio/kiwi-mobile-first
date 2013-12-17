@@ -20,14 +20,6 @@
   vertical-align: top;
   min-height: 1px;
 }
-.kiwi-grid {
-  display: block;
-  font-size: 0;
-}
-.kiwi-grid .centered {
-  display: block;
-  margin: 0 auto;
-}
 /*
 **  Responsive grids
 */
