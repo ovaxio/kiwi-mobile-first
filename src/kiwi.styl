@@ -7,7 +7,7 @@
 $XLARGE_VIEW = 1900px
 $MEDIUM_VIEW = 980px
 $SMALL_VIEW = 786px
-$correction = 0.011
+$correction = 0.031
 
 media(args...)
   output = null
@@ -23,7 +23,7 @@ BUILDELEM(t, e, s)
   if e / s != 0.5 && e != s
     .{t}-{e}-{s}
       width (100/ s ) * e * 1%
-      //*width floor( (((100/ s ) * e) - $correction) * 1% )
+      //*width (((100/ s ) * e) - $correction) * 1%
 
 BUILDGRID(t)
 
@@ -57,30 +57,32 @@ BUILDGRID(t)
   for i in 1 3 5 7 9 11 13 15
     BUILDELEM(t, i, 16)
 
-.kiwi-col
-  display inline-block
-  box-sizing border-box
-  *display inline
-  zoom 1
-  vertical-align top
-  min-height 1px
-  letter-spacing: normal;
-  word-spacing: normal;
-  
 
 .kiwi-grid
-  display block
-  font-size 0
+  letter-spacing: -0.31em;
+  *letter-spacing: normal;
+  *word-spacing: -0.43em;
+  text-rendering: optimizespeed;
   display: -webkit-flex;
   -webkit-flex-flow: row wrap;
+  /* IE10 uses display: flexbox */
   display: -ms-flexbox;
   -ms-flex-flow: row wrap;
-  text-rendering: auto;
-  letter-spacing: -.31em;
+  word-spacing: -0.43em;
 
   .centered
     display block
     margin 0 auto
+
+  & > *
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+
 
 /*
 **  Responsive grids
