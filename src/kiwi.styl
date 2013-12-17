@@ -20,18 +20,16 @@ $MEDIA_MEDIUM = media((max-width $MEDIUM_VIEW))
 $MEDIA_SMALL = media((max-width $SMALL_VIEW))
 
 BUILDELEM(t, e, s)
-  if e / s != 0.5 && e != s
-    .{t}-{e}-{s}
-      width (100/ s ) * e * 1%
-      //*width (((100/ s ) * e) - $correction) * 1%
+  .{t}-{e}-{s}
+    width (100/ s ) * e * 1%
+    *width (((100/ s ) * e) - ($correction/s)) * 1%
 
 BUILDGRID(t)
 
   .{t}-{"1"}
     width 100%
 
-  .{t}-{"1-2"}
-    width 50%
+  BUILDELEM(t, 1, 2)
 
   for i in 1 2 3
     BUILDELEM(t, i, 3)
@@ -65,23 +63,25 @@ BUILDGRID(t)
   text-rendering: optimizespeed;
   display: -webkit-flex;
   -webkit-flex-flow: row wrap;
-  /* IE10 uses display: flexbox */
+  display: flexbox
   display: -ms-flexbox;
   -ms-flex-flow: row wrap;
   word-spacing: -0.43em;
+  *font-size 0
 
   .centered
     display block
     margin 0 auto
 
   & > *
-    display: inline-block;
-    *display: inline;
-    zoom: 1;
+    word-spacing: normal
     letter-spacing: normal;
-    word-spacing: normal;
-    vertical-align: top;
-    text-rendering: auto;
+    display inline-block
+    box-sizing border-box
+    *display inline
+    zoom 1
+    vertical-align top
+    min-height 1px
 
 
 /*

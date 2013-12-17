@@ -2,7 +2,7 @@
 
 ## Features
 
-* 690B (minified + gziped)
+* 889B (minified + gziped)
 * 4 breakpoints by default (small/medium/large/xlarge)
 * Hide/show on a given breakpoint with `.hidden-` and `.visible-` classes
 * Grid nesting support
