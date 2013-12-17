@@ -11,10 +11,18 @@
   zoom: 1;
   vertical-align: top;
   min-height: 1px;
+  letter-spacing: normal;
+  word-spacing: normal;
 }
 .kiwi-grid {
   display: block;
   font-size: 0;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  display: -ms-flexbox;
+  -ms-flex-flow: row wrap;
+  text-rendering: auto;
+  letter-spacing: -0.31em;
 }
 .kiwi-grid .centered {
   display: block;
