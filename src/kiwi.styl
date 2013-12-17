@@ -55,17 +55,18 @@ BUILDGRID(t)
   for i in 1 3 5 7 9 11 13 15
     BUILDELEM(t, i, 16)
 
+  for i in 1 7 9 11 13 17 19
+    BUILDELEM(t, i, 20)
+
 
 .kiwi-grid
   letter-spacing: -0.31em;
   *letter-spacing: normal;
-  *word-spacing: -0.43em;
-  text-rendering: optimizespeed;
-  display: -webkit-flex;
-  -webkit-flex-flow: row wrap;
-  display: flexbox
-  display: -ms-flexbox;
-  -ms-flex-flow: row wrap;
+  *word-spacing: -0.43em; 
+  //display: -webkit-flex;
+  //-webkit-flex-flow: row wrap;
+  //display: -ms-flexbox;
+  //-ms-flex-flow: row wrap;
   word-spacing: -0.43em;
   *font-size 0
 
