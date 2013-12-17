@@ -78,62 +78,44 @@ BUILDGRID(t)
 */
 BUILDGRID('l')
 
-@media $MEDIA_XLARGE
-  BUILDGRID('xl')
-
-@media $MEDIA_MEDIUM
-  BUILDGRID('m')
-
-@media $MEDIA_SMALL
-  BUILDGRID('s')
-
-
-/*
-**  Display
-*/
-.kiwi-visible-xl
-  display none
-.kiwi-hidden-l
-  display none
 .kiwi-visible-l
   display block
-.kiwi-visible-s
-  display none
+.kiwi-visible-xl,
+.kiwi-hidden-l,
+.kiwi-visible-s,
 .kiwi-visible-m
   display none
 
 @media $MEDIA_XLARGE
-  .kiwi-hidden-xl
-    display none
+  BUILDGRID('xl')
+
   .kiwi-visible-xl
     display block
-  .kiwi-visible-l
-    display none
-  .kiwi-visible-m
-    display none
+
+  .kiwi-hidden-xl,
+  .kiwi-visible-l,
+  .kiwi-visible-m,
   .kiwi-visible-s
     display none
 
 @media $MEDIA_MEDIUM
-  .kiwi-hidden-m
-    display none
+  BUILDGRID('m')
+
   .kiwi-visible-m
     display block
-  .kiwi-visible-s
-    display none
-  .kiwi-visible-l
-    display none
+  .kiwi-hidden-m,
+  .kiwi-visible-s,
+  .kiwi-visible-l,
   .kiwi-visible-xl
     display none
 
 @media $MEDIA_SMALL
-  .kiwi-hidden-s
-    display: none
+  BUILDGRID('s')
+
   .kiwi-visible-s
     display: block
-  .kiwi-visible-l
-    display: none
-  .kiwi-visible-m
-    display: none
+  .kiwi-hidden-s,
+  .kiwi-visible-l,
+  .kiwi-visible-m,
   .kiwi-visible-xl
     display none
