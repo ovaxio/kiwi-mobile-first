@@ -161,8 +161,8 @@ Centered:
 
 ```html
   <div class="kiwi-grid">
-    <div class="kiwi-large-2-5.centered">
-      <div>.kiwi-large-2-5.centered</div>
+    <div class="kiwi-col l-2-5 centered">
+      <div>.kiwi-col.l-2-5.centered</div>
     </div>
   </div>
 ```
