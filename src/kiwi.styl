@@ -5,8 +5,8 @@
 @import 'nib'
 
 $XLARGE_VIEW = 1900px
-$MEDIUM_VIEW = 980px
-$SMALL_VIEW = 786px
+$MEDIUM_VIEW = 960px
+$SMALL_VIEW = 767px
 $correction = 0.031
 
 media(args...)
@@ -22,7 +22,6 @@ $MEDIA_SMALL = media((max-width $SMALL_VIEW))
 BUILDELEM(t, e, s)
   .{t}-{e}-{s}
     width (100/ s ) * e * 1%
-    *width (((100/ s ) * e) - ($correction/s)) * 1%
 
 BUILDGRID(t)
 
@@ -60,25 +59,18 @@ BUILDGRID(t)
 
 
 .kiwi-grid
-  letter-spacing: -0.31em;
-  *letter-spacing: normal;
-  *word-spacing: -0.43em; 
-  word-spacing: -0.43em;
-  *font-size 0
+  display inline-block
+  width 100%
 
-  .centered
-    display block
-    margin 0 auto
-
-  & > *
-    word-spacing: normal
-    letter-spacing: normal;
+  .kiwi-col
+    float left
     display inline-block
-    box-sizing border-box
-    *display inline
-    zoom 1
-    vertical-align top
-    min-height 1px
+
+  .centered  
+    margin 0 auto
+    display block
+    float none
+    
 
 
 /*

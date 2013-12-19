@@ -3,7 +3,7 @@ html
   head
     - var STATIC="../"
     meta(name="viewport", content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1")
-    link(rel="stylesheet", href=STATIC+"kiwi.min.css", type="text/css")
+    link(rel="stylesheet", href=STATIC+"kiwi.css", type="text/css")
     :stylus
       *
         margin 0
@@ -11,19 +11,20 @@ html
         font-size 20px
       body
         font: normal 13px/1.5em Arial, sans-serif;
- 
+      h2
+        margin-top 30px
+        line-height 1.4em
       .grey
         box-sizing: border-box;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         -ms-box-sizing: border-box;
-        padding: 15px 0px;
         background-color: #808080;
         color: #fff;
-        //margin: 0 5px;
-        margin-bottom: 5px;
+        padding 10px
+        margin-bottom 10px
         display: block;
-        font: normal 13px/1em Consolas, 'Courier New', courier;
+        font: normal 13px/1.1em Consolas, 'Courier New', courier;
         
   body
     h1 Grids css component
@@ -33,35 +34,28 @@ html
     .kiwi-visible-l LARGE VIEW 
     .kiwi-visible-m MEDIUM VIEW
     .kiwi-visible-s SMALL VIEW
-    br
-    br
+    
     h2 Reponsive grid 
     .kiwi-grid
       for i in [1,2,3,4]
-        .l-1-4.m-1-2.s-1
+        .kiwi-col.l-1-4.m-1-2.s-1
           .grey .l-1-4.m-1-2.s-1
     .kiwi-grid
-      .l-1-2
+      .kiwi-col.l-1-2
         .grey .l-1-2
-      .l-1-2
+      .kiwi-col.l-1-2
         .grey .l-1-2
       
-      
-    br
-    br
     h2 Nested grid
     .kiwi-grid
-      .l-2-5
+      .kiwi-col.l-2-5
         .grey .kiwi-col.l-2-5
-      .l-3-5
+      .kiwi-col.l-3-5
         .kiwi-grid
-          .l-1-2.centered
+          .kiwi-col.l-1-2.centered
             .grey .l-1-2.centered
-      
-
-    br
-    br
+   
     h2 Centered
     .kiwi-grid
-      .l-3-5.centered
+      .kiwi-col.l-3-5.centered
         .grey .l-3-5.centered

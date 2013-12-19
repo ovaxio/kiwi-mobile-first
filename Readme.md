@@ -24,7 +24,7 @@
 * Chrome
 * Firefox
 * Safari
-* IE7+
+* IE8+
 
 ## Installation
 
