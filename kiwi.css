@@ -9,11 +9,15 @@
 .kiwi-grid .kiwi-col {
   float: left;
   display: inline-block;
+  min-height: 1px;
 }
 .kiwi-grid .centered {
   margin: 0 auto;
   display: block;
   float: none;
+}
+.kiwi-grid .end {
+  float: right;
 }
 /*
 **  Responsive grids

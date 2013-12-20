@@ -2,7 +2,7 @@
 
 ## Features
 
-* 648B (minified + gziped)
+* 669B (minified + gziped)
 * 4 breakpoints by default (small/medium/large/xlarge)
 * Hide/show on a given breakpoint with `.hidden-` and `.visible-` classes
 * Grid nesting support
@@ -15,7 +15,7 @@
 
 * Wide screen `>= 1900px`
 * Desktop screen `< 1899px`
-* Tablet screen `<= 980px`
+* Tablet screen `<= 960px`
 * Mobile screen `<= 768px`
 
   
@@ -25,6 +25,7 @@
 * Firefox
 * Safari
 * IE8+
+* Android 2.x+
 
 ## Installation
 
@@ -46,9 +47,10 @@
 
     .kiwi-col
 
-  Column property
+  Column properties
 
     .centered
+    .end
   
   Extra Large Screen
   
@@ -138,7 +140,6 @@ Responsive grid:
   </div>
 ```
 
-
 Nested grid:
 
 ```html
@@ -156,7 +157,6 @@ Nested grid:
   </div>
 ```
 
-
 Centered:
 
 ```html
@@ -167,6 +167,15 @@ Centered:
   </div>
 ```
 
+Pushed right:
+
+```html
+  <div class="kiwi-grid">
+    <div class="kiwi-col l-1-2 end">
+      <div>.kiwi-col.l-1-2.end</div>
+    </div>
+  </div>
+```
 ## License
 
   MIT
