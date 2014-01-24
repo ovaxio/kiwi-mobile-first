@@ -56,12 +56,21 @@ BUILDGRID(t)
 
 
 .kiwi-grid
-  display inline-block
+  display block
   width 100%
+
+  &:before
+    content: " ";
+    display: table;
+
+  &:after
+    content: " ";
+    display: table;
+    clear :both
 
   .kiwi-col
     float left
-    display inline-block
+    display inline
     min-height 1px
 
   .centered  
